@@ -416,7 +416,7 @@ describe('Redis', function () {
             }, 10);
         });
 
-        it('stops the client on error post connection', function (done) {
+        it('do not stop the client on error post connection', function (done) {
 
             var options = {
                 host: '127.0.0.1',
@@ -431,7 +431,7 @@ describe('Redis', function () {
                 expect(redis.client).to.exist();
 
                 redis.client.emit('error', new Error('injected'));
-                expect(redis.client).to.not.exist();
+                expect(redis.client).to.exist();
                 done();
             });
         });
