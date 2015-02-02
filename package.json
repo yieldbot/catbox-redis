@@ -1,5 +1,5 @@
 {
-  "name": "catbox-redis",
+  "name": "yb-catbox-redis",
   "description": "Redis adapter for catbox",
   "version": "1.0.4",
   "author": "Eran Hammer <eran@hammer.io> (http://hueniverse.com)",
